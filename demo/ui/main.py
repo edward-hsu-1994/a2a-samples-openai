@@ -52,6 +52,7 @@ def on_load(e: me.LoadEvent):  # pylint: disable=unused-argument
         # Show the API key dialog if both are not set
         state.api_key_dialog_open = True
 
+    state.api_key_dialog_open = False # Force the dialog to close on load
 
 # Policy to allow the lit custom element to load
 security_policy = me.SecurityPolicy(
